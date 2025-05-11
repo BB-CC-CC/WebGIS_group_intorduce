@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赵瑞焱 - 地理信息科学（数字制图）专业</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', '微软雅黑', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a2f3b, #2c5364);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 0;
+            background: rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            width: 200%;
+            height: 100px;
+            background: rgba(255,255,255,0.05);
+            transform: translateX(-50%) rotate(-3deg);
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #4CAF50;
+            margin-bottom: 20px;
+            box-shadow: 0 0 30px rgba(76,175,80,0.3);
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            position: sticky;
+            top: 0;
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            backdrop-filter: blur(10px);
+            z-index: 100;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+
+        .nav-menu a:hover {
+            background: rgba(76,175,80,0.5);
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 1px solid rgba(76,175,80,0.3);
+        }
+
+        .card h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+            border-left: 5px solid #4CAF50;
+            padding-left: 15px;
+        }
+
+        .skill-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item {
+            background: rgba(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .skill-item h3 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .tech-tag {
+            background: rgba(76,175,80,0.3);
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: rgba(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .nav-menu {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/images/zry.png" alt="赵瑞焱" class="profile-img">
+        <h1>赵瑞焱</h1>
+        <p>地理信息科学（数字制图）专业 | 武汉大学</p>
+    </header>
+
+    <nav class="nav-menu">
+        <a href="#about"><i class="fas fa-user-graduate"></i> 专业背景</a>
+        <a href="#skills"><i class="fas fa-laptop-code"></i> 技术能力</a>
+        <a href="#projects"><i class="fas fa-project-diagram"></i> 项目经验</a>
+        <a href="#achievements"><i class="fas fa-trophy"></i> 项目成果</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="card">
+            <h2>专业背景</h2>
+            <p>武汉大学地理信息科学（数字制图），系统掌握空间数据处理与分析技术，具备以下核心能力：</p>
+            <ul class="tech-stack" style="margin-top:15px">
+                <li class="tech-tag">地理空间分析</li>
+                <li class="tech-tag">数字制图原理</li>
+                <li class="tech-tag">遥感技术应用</li>
+                <li class="tech-tag">空间数据库</li>
+            </ul>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>技术能力矩阵</h2>
+            <div class="skill-container">
+                <div class="skill-item">
+                    <h3><i class="fas fa-globe-asia"></i> GIS应用</h3>
+                    <p>精通ArcGIS全平台操作，熟练进行空间数据分析与可视化</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">ArcGIS Pro</span>
+                        <span class="tech-tag">ArcPy</span>
+                        <span class="tech-tag">空间分析</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <h3><i class="fas fa-satellite"></i> 遥感技术</h3>
+                    <p>掌握ERDAS IMAGINE影像处理全流程，具备多源遥感数据解译能力</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">ERDAS</span>
+                        <span class="tech-tag">影像分类</span>
+                        <span class="tech-tag">变化检测</span>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <h3><i class="fas fa-code"></i> 编程开发</h3>
+                    <p>Python自动化处理 | WebGIS开发 | 空间数据库管理</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">SQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>项目经验</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>城市土地利用遥感监测</h3>
+                    <p>优化分类算法实现精度提升15%，建立标准化数据处理流程</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">ERDAS</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>智慧校园GIS系统</h3>
+                    <p>自主完成从数据库设计到前端实现的完整开发流程</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">WebGIS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="card">
+            <h2>项目成果</h2>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 95%">空间分析 95%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 90%">遥感解译 90%</div>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 85%">WebGIS开发 85%</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

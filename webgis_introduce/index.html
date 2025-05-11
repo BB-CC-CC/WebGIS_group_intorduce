@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队介绍</title>
+    <link rel="stylesheet" href="style_people.css">
+    <link rel="stylesheet" href="style_sections.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v8.2.0/ol.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@v8.2.0/dist/ol.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <h2>WebGIS</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#team-intro" class="nav-item active">小组介绍</a></li>
+                <li><a href="#courses" class="nav-item">课程</a></li>
+                <li><a href="#footprint-map" class="nav-item">足迹地图</a></li>
+                <li><a href="#contact" class="nav-item">联系方式</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <section id="team-intro" class="section">
+                <h1 class="section-title">小组介绍</h1>
+                <div class="team-intro-box">
+                    <h3>关于我们</h3>
+                    <p>我们是来自武汉大学资源与环境科学学院的WebGIS小组。团队由三名充满热情的地理信息科学专业学生组成，致力于探索和实践Web地理信息系统的前沿技术。</p>
+                    <p>在数字制图方向的学习过程中，我们不断追求创新，努力将地理信息科学与现代Web技术相结合，以创造出更好的地理信息可视化解决方案。</p>
+                </div>
+                <div class="team-members">
+                    <div class="card">
+                        <div class="photo"><img src="images/zry.png" alt="头像"></div>
+                        <h1>赵瑞焱</h1>
+                        <h2>组长</h2>
+                        <p>武汉大学</p>
+                        <p>资源与环境科学学院</p>
+                        <p>地理信息科学（数字制图）专业</p>
+                        <a href="introduce/zry.html" target="_blank">了解更多</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="photo"><img src="images/bc.png" alt="头像"></div>
+                        <h1>白聪</h1>
+                        <h2>组员</h2>
+                        <p>武汉大学</p>
+                        <p>资源与环境科学学院</p>
+                        <p>地理信息科学（数字制图）专业</p>
+                        <a href="introduce/bc.html" target="_blank">了解更多</a>
+                    </div>
+
+                    <div class="card">
+                        <div class="photo"><img src="images/syh.png" alt="头像"></div>
+                        <h1>孙煜航</h1>
+                        <h2>组员</h2>
+                        <p>武汉大学</p>
+                        <p>资源与环境科学学院</p>
+                        <p>地理信息科学（数字制图）专业</p>
+                        <a href="introduce/syh.html" target="_blank">了解更多</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="courses" class="section">
+                <h1 class="section-title">课程</h1>
+                <div class="courses-container">
+                    <p>这里将放置课程内容</p>
+                </div>
+            </section>
+
+            <section id="footprint-map" class="section">
+                <h1 class="section-title">足迹地图</h1>
+                <div class="map-container">
+                    <div class="map-controls">
+                        <div class="layer-switcher">
+                            <label>
+                                <input type="radio" name="base-layer" value="vector" checked> 矢量地图
+                            </label>
+                            <label>
+                                <input type="radio" name="base-layer" value="image"> 影像地图
+                            </label>
+                        </div>
+                    </div>
+                    <div id="map" class="map"></div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h1 class="section-title">联系方式</h1>
+                <div class="contact-container">
+                    <div class="contact-column">
+                        <h3><i class="fas fa-map-marker-alt"></i> 地址</h3>
+                        <p>武汉市武昌区珞喻路129号</p>
+                        <p>武汉大学资源与环境科学学院</p>
+                    </div>
+                    <div class="contact-column">
+                        <h3><i class="fas fa-envelope"></i> 邮箱</h3>
+                        <p>2022302051143@whu.edu.cn</p>
+                    </div>
+                    <div class="contact-column">
+                        <h3><i class="fas fa-phone"></i> 电话</h3>
+                        <p>+86 13180559327</p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2025 WebGIS 团队 - 武汉大学</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="map.js"></script>
+</body>
+
+</html>
