@@ -1,1 +1,2 @@
 # WebGIS_group_intorduce
+一个简单的WebGIS课程小组介绍网站
